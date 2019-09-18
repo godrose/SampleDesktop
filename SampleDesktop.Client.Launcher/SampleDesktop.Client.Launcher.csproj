@@ -12,4 +12,11 @@
     <OutputPath>..\bin\Debug</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Themes\LogoFX\Dark\**" />
+    <EmbeddedResource Remove="Themes\LogoFX\Dark\**" />
+    <None Remove="Themes\LogoFX\Dark\**" />
+    <Page Remove="Themes\LogoFX\Dark\**" />
+  </ItemGroup>
+
 </Project>
