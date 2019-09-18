@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.29311.281
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleDesktop.Client.Launcher", "SampleDesktop.Client.Launcher\SampleDesktop.Client.Launcher.csproj", "{9902E8D6-44D4-4CB8-BE40-B29A40E8A425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDesktop.Client.Launcher.Shared", "SampleDesktop.Client.Launcher.Shared\SampleDesktop.Client.Launcher.Shared.csproj", "{F3F65290-AEB8-499D-90B7-27F369179FD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleDesktop.Client.Launcher.Shared", "SampleDesktop.Client.Launcher.Shared\SampleDesktop.Client.Launcher.Shared.csproj", "{F3F65290-AEB8-499D-90B7-27F369179FD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{92CA51D6-6C69-40DA-8D8F-00EF7C9D1A61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDesktop.Client.Presentation.Shell", "SampleDesktop.Client.Presentation.Shell\SampleDesktop.Client.Presentation.Shell.csproj", "{C41C9347-5977-4927-A569-58B26EED396C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleDesktop.Client.Presentation.Shell", "SampleDesktop.Client.Presentation.Shell\SampleDesktop.Client.Presentation.Shell.csproj", "{C41C9347-5977-4927-A569-58B26EED396C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleDesktop.Client.Presentation.Shell.Contracts", "SampleDesktop.Client.Presentation.Shell.Contracts\SampleDesktop.Client.Presentation.Shell.Contracts.csproj", "{50526212-6022-41D8-AB1C-8CD2CFD58C0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{D6EBAE66-ABC2-4689-B058-633C6E4CB8CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDesktop.Client.Model.Contracts", "SampleDesktop.Client.Model.Contracts\SampleDesktop.Client.Model.Contracts.csproj", "{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,12 +35,22 @@ Global
 		{C41C9347-5977-4927-A569-58B26EED396C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C41C9347-5977-4927-A569-58B26EED396C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C41C9347-5977-4927-A569-58B26EED396C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50526212-6022-41D8-AB1C-8CD2CFD58C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50526212-6022-41D8-AB1C-8CD2CFD58C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50526212-6022-41D8-AB1C-8CD2CFD58C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50526212-6022-41D8-AB1C-8CD2CFD58C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C41C9347-5977-4927-A569-58B26EED396C} = {92CA51D6-6C69-40DA-8D8F-00EF7C9D1A61}
+		{50526212-6022-41D8-AB1C-8CD2CFD58C0C} = {92CA51D6-6C69-40DA-8D8F-00EF7C9D1A61}
+		{95877C3F-FD10-4FEF-ACF7-DDF9C3B64A3A} = {D6EBAE66-ABC2-4689-B058-633C6E4CB8CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {321DB9B2-AA78-4BE4-929A-6DC09C20A7D4}
