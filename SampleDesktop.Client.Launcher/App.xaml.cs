@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using LogoFX.Client.Bootstrapping;
+using LogoFX.Client.Mvvm.Commanding;
+using SampleDesktop.Client.Launcher.Shared;
 
 namespace SampleDesktop.Client.Launcher
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    partial class App
     {
+        public App()
+        {
+            var bootstrapper =
+                new AppBootstrapper()
+                    .UseResolver()
+                    .UseCommanding()
+                    .UseShared();
+            bootstrapper.Initialize();
+        }
     }
 }

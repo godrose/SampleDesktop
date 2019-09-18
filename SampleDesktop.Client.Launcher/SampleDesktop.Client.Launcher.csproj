@@ -10,13 +10,17 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\bin\Debug</OutputPath>
-  </PropertyGroup>
+  </PropertyGroup>  
 
   <ItemGroup>
-    <Compile Remove="Themes\LogoFX\Dark\**" />
-    <EmbeddedResource Remove="Themes\LogoFX\Dark\**" />
-    <None Remove="Themes\LogoFX\Dark\**" />
-    <Page Remove="Themes\LogoFX\Dark\**" />
+    <PackageReference Include="LogoFX.Client.Bootstrapping" Version="2.0.0" />
+    <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.SimpleContainer" Version="2.0.0" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Commanding" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SampleDesktop.Client.Launcher.Shared\SampleDesktop.Client.Launcher.Shared.csproj" />
+    <ProjectReference Include="..\SampleDesktop.Client.Presentation.Shell\SampleDesktop.Client.Presentation.Shell.csproj" />
   </ItemGroup>
 
 </Project>
